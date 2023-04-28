@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>DK Computers</title>
+</head>
+<body class="background">
+    <div class="container">
+        
+            <!--           Hero section            -->
+            <div class="hero">
+                <h1 class="hero-title">DK Computers</h1>
+                <div class="line"></div>
+                <h2 class="page-title">Order Form</h2>
+                <div class="line"></div>
+            </div>
+        <section id="computer">
+            <!--            computer Options            -->
+            <div class="options">
+                <div class="choose">Please select your computer:</div>
+                <div class="comp-container">
+                    <input type="radio" name="base" id="basic" class="comp" value="DK Laptop"><label for="basic">DK Laptop<p class="price">$999</p></label>
+                    <input type="radio" name="base" id="pro"  class="comp" value="DK Laptop PRO"><label for="pro">DK Laptop PRO<p class="price">$1399</p></label>
+                </div>
+
+                <!--            Storage Options            -->
+                <div class="choose">Please select a storage size:</div>
+                <div class="comp-container" id="inactive">
+                    <input type="" name="storage" id="gb" class="comp"><label for="gb">512GB SSD storage<p class="price">+$0</p></label>
+                    <input type="" name="storage" id="tb"  class="comp"><label for="tb">1TB SSD storage<p class="price">+$199</p></label>
+
+                </div>
+
+                <!--            warranty Option            -->
+                <div class="choose">Would you like to add the extended warranty?</div>
+                <div class="comp-container" id="inactive">
+                <input type="" id="warranty" class="comp"><label for="warranty">5 year extended warranty<p class="price">+$159</p></label>
+                </div>
+            </div>
+        </section> 
+            <!--            page brake            -->
+            <div class="line round1" id='line'hidden></div>             <!--  hidden -->
+            <h2 class="page-title round1" id='cartP' hidden>Cart</h2>         <!-- hidden -->
+            <div class="line"></div>
+
+            <!--           cart Holding area           -->
+            <p id="chosen" hidden><u>Items Chosen:</u></p>        <!-- hidden-->
+            <div class="hold">
+                <p class="item-title"  id="result"></p>
+                <button type="button" id="shop-cart" onclick="shoppingCart()" hidden>Add to Shopping Cart</button><!-- hidden -->
+                <p class="subtotal round1" id="total" hidden></p>          <!--hidden-->
+            </div>
+             <!--           total and order button           -->
+            <div class="total">
+                
+                <button type="button" class="round1" id="order" onclick="orderNow()" hidden>Order Now</button>  <!--hidden-->
+                <button type="button" class="round1" id="cancel" onclick="cancel()" hidden>Remove Item</button>  <!--hidden-->
+            </div>
+           
+            
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
