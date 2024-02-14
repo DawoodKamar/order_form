@@ -7,7 +7,7 @@ let subTotal = document.querySelector('#total'); //variable defined as query sel
 let round1 = Array.from(document.querySelectorAll('.round1')); //variable defined as query selector targeting the items to be triggered when the shopping cart button is pressed
 let all = Array.from(document.querySelectorAll('.comp')); //variable defined as query selector targeting all the computer building choices
 
-//defining variables to hold the users computer buildiung choices
+//defining variables to hold the users computer building choices
 let comp1=""; 
 let storage1 = "";
 let warranty1= "";
